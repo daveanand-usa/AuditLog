@@ -69,3 +69,11 @@ C:\Users\dave\source\repos\DoddLoggerApi\bin\Debug\net9.0\runtimes\win\lib\net9.
 C:\Users\dave\source\repos\DoddLoggerApi\bin\Debug\net9.0\runtimes\win\lib\net9.0\System.Security.Cryptography.Pkcs.dll
 C:\Users\dave\source\repos\DoddLoggerApi\obj\Debug\net9.0\DoddLoggerApi.csproj.AssemblyReference.cache
 C:\Users\dave\source\repos\DoddLoggerApi\obj\Debug\net9.0\DoddLogg.D679152D.Up2Date
+C:\Users\dave\source\repos\DoddLoggerApi\obj\Debug\net9.0\DoddLoggerApi.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\dave\source\repos\DoddLoggerApi\obj\Debug\net9.0\DoddLoggerApi.sourcelink.json
+C:\Users\dave\source\repos\DoddLoggerApi\bin\Debug\net9.0\DoddLoggerApi.xml
+C:\Users\dave\source\repos\DoddLoggerApi\bin\Debug\net9.0\Microsoft.OpenApi.dll
+C:\Users\dave\source\repos\DoddLoggerApi\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\dave\source\repos\DoddLoggerApi\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\dave\source\repos\DoddLoggerApi\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\dave\source\repos\DoddLoggerApi\obj\Debug\net9.0\DoddLoggerApi.xml

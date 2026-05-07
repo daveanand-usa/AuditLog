@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DoddLoggerApi</name>
+    </assembly>
+    <members>
+        <member name="M:DoddLoggerApi.Controllers.LogController.Post(DoddLoggerApi.Models.LogData)">
+            <summary>
+            Records a log entry to the database
+            </summary>
+            <param name="logData">The log data containing request/response information</param>
+            <returns>Confirmation message with correlation ID</returns>
+            <response code="200">Log recorded successfully</response>
+            <response code="500">Internal server error when recording log</response>
+        </member>
+        <member name="T:DoddLoggerApi.Models.LogData">
+            <summary>
+            Represents log data for tracking API requests and responses
+            </summary>
+        </member>
+        <member name="P:DoddLoggerApi.Models.LogData.Environment">
+            <summary>
+            Environment name (e.g., DEV, QA, PROD)
+            </summary>
+        </member>
+        <member name="P:DoddLoggerApi.Models.LogData.Application">
+            <summary>
+            Application name that generated the log
+            </summary>
+        </member>
+        <member name="P:DoddLoggerApi.Models.LogData.ApiName">
+            <summary>
+            Name of the API being logged
+            </summary>
+        </member>
+        <member name="P:DoddLoggerApi.Models.LogData.CorrelationId">
+            <summary>
+            Unique identifier for correlating related log entries
+            </summary>
+        </member>
+        <member name="P:DoddLoggerApi.Models.LogData.ClientIP">
+            <summary>
+            IP address of the client making the request
+            </summary>
+        </member>
+        <member name="P:DoddLoggerApi.Models.LogData.LogType">
+            <summary>
+            Type of log entry (e.g., Request, Response, Error)
+            </summary>
+        </member>
+        <member name="P:DoddLoggerApi.Models.LogData.LogLevel">
+            <summary>
+            Log severity level
+            </summary>
+        </member>
+        <member name="P:DoddLoggerApi.Models.LogData.UserName">
+            <summary>
+            Username of the user making the request
+            </summary>
+        </member>
+        <member name="P:DoddLoggerApi.Models.LogData.RequestUrl">
+            <summary>
+            URL of the request
+            </summary>
+        </member>
+        <member name="P:DoddLoggerApi.Models.LogData.RequestType">
+            <summary>
+            HTTP method of the request (e.g., GET, POST)
+            </summary>
+        </member>
+        <member name="P:DoddLoggerApi.Models.LogData.RequestData">
+            <summary>
+            Request body or payload
+            </summary>
+        </member>
+        <member name="P:DoddLoggerApi.Models.LogData.Success">
+            <summary>
+            Indicates whether the request was successful
+            </summary>
+        </member>
+        <member name="P:DoddLoggerApi.Models.LogData.StatusCode">
+            <summary>
+            HTTP status code of the response
+            </summary>
+        </member>
+        <member name="P:DoddLoggerApi.Models.LogData.ProcessTime">
+            <summary>
+            Time taken to process the request
+            </summary>
+        </member>
+        <member name="P:DoddLoggerApi.Models.LogData.ResponseData">
+            <summary>
+            Response data or payload
+            </summary>
+        </member>
+        <member name="P:DoddLoggerApi.Models.LogData.ErrorMessages">
+            <summary>
+            Error messages if any occurred
+            </summary>
+        </member>
+    </members>
+</doc>

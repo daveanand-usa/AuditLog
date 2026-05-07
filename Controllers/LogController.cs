@@ -6,6 +6,7 @@ namespace DoddLoggerApi.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
+[Produces("application/json")]
 public class LogController : ControllerBase
 {
     private readonly ILogger<LogController> _logger;
@@ -17,7 +18,16 @@ public class LogController : ControllerBase
         _logRepository = logRepository;
     }
 
+    /// <summary>
+    /// Records a log entry to the database
+    /// </summary>
+    /// <param name="logData">The log data containing request/response information</param>
+    /// <returns>Confirmation message with correlation ID</returns>
+    /// <response code="200">Log recorded successfully</response>
+    /// <response code="500">Internal server error when recording log</response>
     [HttpPost]
+    [ProducesResponseType(typeof(object), StatusCodes.Status200OK)]
+    [ProducesResponseType(typeof(object), StatusCodes.Status500InternalServerError)]
     public async Task<IActionResult> Post([FromBody] LogData logData)
     {
         try
